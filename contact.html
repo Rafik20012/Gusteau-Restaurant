@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Gusteau Restaurant</title>
+  <style>
+    /* CSS for Contact Page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      background: #e67e22;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #d35400;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+    }
+
+    .contact-info h2 {
+      font-size: 1.5em;
+      color: #e67e22;
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      font-size: 1.2em;
+      margin: 5px 0;
+    }
+
+    .contact-info a {
+      color: #e67e22;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/menu">Menu</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Contact Us</h1>
+    <p>Reach out to us for reservations or any inquiries.</p>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <h2>Our Facebook Page</h2>
+      <p>
+        <a href="https://www.facebook.com/GusteauRestaurant" target="_blank">
+          Visit us on Facebook
+        </a>
+      </p>
+
+      <h2>Our Contact Numbers</h2>
+      <p>+1 (123) 456-7890</p>
+      <p>+1 (987) 654-3210</p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Gusteau Restaurant</p>
+  </footer>
+</body>
+</html>

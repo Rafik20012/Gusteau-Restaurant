@@ -1,0 +1,38 @@
+
+download and install node.js
+
+node -v
+npm -v
+
+npm install -g npm@latest
+
+npm cache clean --force
+
+npm -v
+
+npm uninstall -g vercel
+
+npm install -g vercel
+
+vercel --version
+
+vercel login
+
+
+mkdir restaurant-website
+cd restaurant-website
+
+***** coding *****
+
+npm init -y
+
+npm install express
+npm install nodemon --save-dev
+npm install
+
+npm start
+
+
+netstat -ano | findstr :3000
+
+taskkill /PID 29220 /F

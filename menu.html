@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Gusteau Restaurant</title>
+  <style>
+    /* CSS for Menu Page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .menu-section {
+      margin-bottom: 40px;
+    }
+
+    .menu-section h2 {
+      font-size: 2em;
+      color: #e67e22;
+      margin-bottom: 20px;
+    }
+
+    .menu-items {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .menu-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .menu-item h3 {
+      margin: 10px 0;
+    }
+
+    .menu-item .price {
+      font-weight: bold;
+      color: #e67e22;
+    }
+
+    .order-button {
+      background: #e67e22;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .order-button:hover {
+      background: #d35400;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/menu">Menu</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Our Menu</h1>
+
+    <!-- Appetizers Section -->
+    <div class="menu-section">
+      <h2>Appetizers</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="images/appetizer1.jpg" alt="Appetizer 1">
+          <h3>Escargots de Bourgogne</h3>
+          <p>Classic French snails baked in garlic herb butter.</p>
+          <p class="price">$12.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Escargots%20de%20Bourgogne'">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/appetizer2.jpg" alt="Appetizer 2">
+          <h3>Foie Gras</h3>
+          <p>Pan-seared duck liver with fig compote.</p>
+          <p class="price">$18.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Foie%20Gras'">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/appetizer3.jpg" alt="Appetizer 3">
+          <h3>French Onion Soup</h3>
+          <p>Rich beef broth with caramelized onions and melted cheese.</p>
+          <p class="price">$9.99</p>
+          <button class="order-button" onclick="location.href='/order?item=French%20Onion%20Soup'">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/appetizer4.jpg" alt="Appetizer 4">
+          <h3>Salade Niçoise</h3>
+          <p>Fresh salad with tuna, olives, eggs, and anchovies.</p>
+          <p class="price">$14.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Salade%20Niçoise'">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Courses Section -->
+    <div class="menu-section">
+      <h2>Main Courses</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="images/main1.jpg" alt="Main Course 1">
+          <h3>Beef Bourguignon</h3>
+          <p>Slow-cooked beef in red wine with mushrooms and onions.</p>
+          <p class="price">$24.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Beef%20Bourguignon'">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/main2.jpg" alt="Main Course 2">
+          <h3>Coq au Vin</h3>
+          <p>Braised chicken in red wine with bacon and mushrooms.</p>
+          <p class="price">$22.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Coq%20au%20Vin'">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/main3.jpg" alt="Main Course 3">
+          <h3>Duck Confit</h3>
+          <p>Crispy duck leg served with roasted potatoes.</p>
+          <p class="price">$26.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Duck%20Confit'">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/main4.jpg" alt="Main Course 4">
+          <h3>Ratatouille</h3>
+          <p>Vegetable stew with eggplant, zucchini, and tomatoes.</p>
+          <p class="price">$19.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Ratatouille'">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desserts Section -->
+    <div class="menu-section">
+      <h2>Desserts</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="images/dessert1.jpg" alt="Dessert 1">
+          <h3>Crème Brûlée</h3>
+          <p>Classic French custard with a caramelized sugar top.</p>
+          <p class="price">$8.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Crème%20Brûlée'">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/dessert2.jpg" alt="Dessert 2">
+          <h3>Tarte Tatin</h3>
+          <p>Upside-down caramelized apple tart.</p>
+          <p class="price">$10.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Tarte%20Tatin'">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/dessert3.jpg" alt="Dessert 3">
+          <h3>Macarons</h3>
+          <p>Assorted French macarons in various flavors.</p>
+          <p class="price">$12.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Macarons'">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/dessert4.jpg" alt="Dessert 4">
+          <h3>Chocolate Soufflé</h3>
+          <p>Warm chocolate soufflé with a molten center.</p>
+          <p class="price">$11.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Chocolate%20Soufflé'">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beverages Section -->
+    <div class="menu-section">
+      <h2>Beverages</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="images/juice1.jpg" alt="Juice">
+          <h3>Fresh Orange Juice</h3>
+          <p>Freshly squeezed orange juice.</p>
+          <p class="price">$5.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Fresh%20Orange%20Juice'">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/beverage2.jpg" alt="Champagne">
+          <h3>Champagne</h3>
+          <p>Sparkling champagne from the Champagne region.</p>
+          <p class="price">$29.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Champagne'">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/beverage3.jpg" alt="Espresso">
+          <h3>Espresso</h3>
+          <p>Strong and aromatic French espresso.</p>
+          <p class="price">$4.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Espresso'">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="images/beverage4.jpg" alt="Citron Pressé">
+          <h3>Citron Pressé</h3>
+          <p>Freshly squeezed lemonade with a touch of sweetness.</p>
+          <p class="price">$6.99</p>
+          <button class="order-button" onclick="location.href='/order?item=Citron%20Pressé'">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Gusteau Restaurant</p>
+  </footer>
+</body>
+</html>

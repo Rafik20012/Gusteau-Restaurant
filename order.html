@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Your Order - Gusteau Restaurant</title>
+  <style>
+    /* CSS for Order Page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .order-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .order-form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .order-form input,
+    .order-form select,
+    .order-form textarea {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .order-form textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .order-form button {
+      width: 90%;
+      padding: 15px;
+      background: #e67e22;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1em;
+      transition: background 0.3s ease;
+    }
+
+    .order-form button:hover {
+      background: #d35400;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/menu">Menu</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Place Your Order</h1>
+    <form class="order-form">
+      <!-- Personal Information -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="address">Delivery Address:</label>
+      <textarea id="address" name="address" placeholder="Enter your delivery address" required></textarea>
+
+      <!-- Order Details -->
+      <label for="item">Selected Item:</label>
+      <input type="text" id="item" name="item" readonly>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+      <!-- Special Instructions -->
+      <label for="instructions">Special Instructions:</label>
+      <textarea id="instructions" name="instructions" placeholder="Any special requests or instructions?"></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit">Place Order</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 Gusteau Restaurant</p>
+  </footer>
+
+  <script>
+    // JavaScript to populate the selected item from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedItem = urlParams.get('item');
+
+    if (selectedItem) {
+      document.getElementById('item').value = selectedItem;
+    }
+  </script>
+</body>
+</html>

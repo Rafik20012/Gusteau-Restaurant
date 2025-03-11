@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gusteau Restaurant</title>
+  <style>
+    /* CSS for Home Page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .gallery {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: #e67e22;
+    }
+
+    .gallery-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .gallery-container img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/menu">Menu</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Welcome to Gusteau Restaurant</h1>
+    <p>Experience the finest cuisine in town.</p>
+
+    <!-- Food Gallery -->
+    <section class="gallery">
+      <h2>Our Delicious Foods</h2>
+      <div class="gallery-container">
+        <img src="images/food1.jpg" alt="Food 1">
+        <img src="images/food2.jpg" alt="Food 2">
+        <img src="images/food3.jpg" alt="Food 3">
+        <img src="images/food4.jpg" alt="Food 4">
+      </div>
+    </section>
+
+    <!-- Restaurant Photo -->
+    <section class="gallery">
+      <h2>Our Restaurant</h2>
+      <div class="gallery-container">
+        <img src="images/restaurant1.jpg" alt="Restaurant 1">
+        <img src="images/restaurant2.jpg" alt="Restaurant 2">
+        <img src="images/restaurant3.jpg" alt="Restaurant 3">
+        <img src="images/restaurant4.jpg" alt="Restaurant 4">
+      </div>
+    </section>
+
+    <!-- Worker Photo -->
+    <section class="gallery">
+      <h2>Our Team</h2>
+      <div class="gallery-container">
+        <img src="images/worker1.jpg" alt="Worker 1">
+        <img src="images/worker2.jpg" alt="Worker 2">
+        <img src="images/worker3.jpg" alt="Worker 3">
+        <img src="images/worker4.jpg" alt="Worker 4">
+      </div>
+    </section>
+
+    <!-- Customer Photo -->
+    <section class="gallery">
+      <h2>Our Customers</h2>
+      <div class="gallery-container">
+        <img src="images/customer1.jpg" alt="Customer 1">
+        <img src="images/customer2.jpg" alt="Customer 2">
+        <img src="images/customer3.jpg" alt="Customer 3">
+        <img src="images/customer4.jpg" alt="Customer 4">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Gusteau Restaurant</p>
+  </footer>
+</body>
+</html>
